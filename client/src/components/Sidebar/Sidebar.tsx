@@ -27,19 +27,12 @@ const Sidebar: React.FC<SidebarProps> = ({
     <div className="fixed left-0 top-0 w-64 h-full bg-slate-800 flex flex-col py-6 px-4">
       {/* Header Section */}
       <div className="flex flex-col items-center mb-8">
-        <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 100 100" 
-            className="w-full h-full"
-            fill="#00bcd4"
-          >
-            <rect x="20" y="15" width="50" height="65" rx="5" fill="none" stroke="#00bcd4" strokeWidth="4"/>
-            <rect x="70" y="20" width="8" height="50" rx="4" fill="#00bcd4"/>
-            <line x1="30" y1="30" x2="55" y2="30" stroke="#00bcd4" strokeWidth="3"/>
-            <line x1="30" y1="40" x2="55" y2="40" stroke="#00bcd4" strokeWidth="3"/>
-            <line x1="30" y1="50" x2="45" y2="50" stroke="#00bcd4" strokeWidth="3"/>
-          </svg>
+        <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 p-2">
+          <img 
+            src="@assets/logo.png" 
+            alt="Notes App Logo"
+            className="w-full h-full object-contain"
+          />
         </div>
         
         {showBackButton ? (
