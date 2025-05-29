@@ -1,5 +1,5 @@
 import React from 'react';
-import { Note } from '../../hooks/useNotes';
+import { Note } from '../../hooks/useFirebaseNotes';
 
 interface NoteEditorProps {
   editingNote: Note | null;
