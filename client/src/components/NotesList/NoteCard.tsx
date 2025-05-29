@@ -1,11 +1,11 @@
 import React from 'react';
 import { Edit3, Trash2 } from 'lucide-react';
-import { Note } from '../../hooks/useNotes';
+import { Note } from '../../hooks/useFirebaseNotes';
 
 interface NoteCardProps {
   note: Note;
   onEdit: (note: Note) => void;
-  onDelete: (noteId: number) => void;
+  onDelete: (noteId: string) => void;
 }
 
 const NoteCard: React.FC<NoteCardProps> = ({ note, onEdit, onDelete }) => {

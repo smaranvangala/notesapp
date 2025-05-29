@@ -1,14 +1,14 @@
 import React from 'react';
 import SearchBar from '../SearchBar/SearchBar';
 import NoteCard from './NoteCard';
-import { Note } from '../../hooks/useNotes';
+import { Note } from '../../hooks/useFirebaseNotes';
 
 interface NotesListProps {
   filteredNotes: Note[];
   searchTerm: string;
   setSearchTerm: (term: string) => void;
   onEditNote: (note: Note) => void;
-  onDeleteNote: (noteId: number) => void;
+  onDeleteNote: (noteId: string) => void;
 }
 
 const NotesList: React.FC<NotesListProps> = ({ 
